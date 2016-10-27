@@ -74,7 +74,7 @@ class JiraBridge(object):
                     self.base_url, issue["key"]
                 ), "white", attrs=["underline"]
             )
-        if mode == 1 or comments_only:
+        if mode >= 1 or comments_only:
             fields["description"] = issue.setdefault("description","") or ""
             if not issue.get("priority", ""):
                 self.fields["priority"] = ""
