@@ -4,6 +4,7 @@
 from abc import ABCMeta, abstractmethod
 
 import six
+import json
 
 from jiracli.cli import colorfunc
 from jiracli.errors import UsageError, UsageWarning
